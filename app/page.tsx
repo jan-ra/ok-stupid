@@ -176,10 +176,10 @@ export default function TinderClone() {
         className="fixed bottom-4 right-4 flex items-center gap-2 bg-black/70 text-white px-3 py-1 rounded-full shadow-lg cursor-pointer z-40 hover:bg-black/90 transition text-xs"
         onClick={() => setShowLogoOverlay(true)}
       >
-        <span>brought to you by - I Triple E -</span>
+        <span>brought to you by - I Tripel E -</span>
         <img
           src="/ok-stupid/logo.jpeg"
-          alt="I TRIPLE E Logo"
+          alt="I TRIPEL E Logo"
           className="w-6 h-6 object-contain rounded-full"
         />
       </div>
