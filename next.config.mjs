@@ -10,9 +10,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: isProd ? "/your-repository-name/" : "",
-  basePath: isProd ? "/your-repository-name" : "",
-  output: "export",
+  assetPrefix: isProd ? "/ok-stupid/" : "",
+  basePath: isProd ? "/ok-stupid" : "",
 };
 
 export default nextConfig;
