@@ -51,6 +51,7 @@ export default function TinderClone() {
   const [direction, setDirection] = useState("");
   const [isAnimating, setIsAnimating] = useState(false);
   const [hasLikedOnce, setHasLikedOnce] = useState(false);
+  const [showLogoOverlay, setShowLogoOverlay] = useState(false);
 
   const currentProfile = profileData[currentProfileIndex];
 
@@ -170,6 +171,38 @@ export default function TinderClone() {
           </Button>
         </div>
       </div>
+      {/* Claim at bottom right */}
+      <div
+        className="fixed bottom-4 right-4 flex items-center gap-2 bg-black/70 text-white px-3 py-1 rounded-full shadow-lg cursor-pointer z-40 hover:bg-black/90 transition text-xs"
+        onClick={() => setShowLogoOverlay(true)}
+      >
+        <span>brought to you by - I Triple E -</span>
+        <img
+          src="/ok-stupid/logo.jpeg"
+          alt="I TRIPLE E Logo"
+          className="w-6 h-6 object-contain rounded-full"
+        />
+      </div>
+      {/* Logo overlay */}
+      {showLogoOverlay && (
+        <div className="fixed inset-0 bg-black/80 flex flex-col items-center justify-center z-50">
+          <button
+            className="absolute top-6 right-6 text-white text-3xl font-bold bg-black/60 rounded-full w-10 h-10 flex items-center justify-center hover:bg-black/80 transition"
+            onClick={() => setShowLogoOverlay(false)}
+            aria-label="Close logo overlay"
+          >
+            &times;
+          </button>
+          <img
+            src="/ok-stupid/logo.jpeg"
+            alt="I TRIPLE E Logo Large"
+            className="w-64 h-64 object-contain rounded-2xl shadow-2xl border-4 border-white"
+          />
+          <span className="mt-4 text-white text-lg font-semibold">
+            I TRIPLE E
+          </span>
+        </div>
+      )}
     </div>
   );
 }
