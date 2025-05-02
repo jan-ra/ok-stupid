@@ -76,11 +76,7 @@ export default function TinderClone() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-      <h1 className="text-2xl md:text-3xl font-bold mb-4 md:mb-8">
-        Tinder Clone
-      </h1>
-
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4 dark bg-gray-900 dark:text-white">
       <div className="w-full max-w-sm relative">
         <motion.div
           animate={
