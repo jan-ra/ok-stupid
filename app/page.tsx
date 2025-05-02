@@ -96,7 +96,9 @@ export default function TinderClone() {
           <Card className="overflow-hidden shadow-lg">
             <div className="relative h-[400px] w-full">
               <Image
-                src={currentProfile.imageUrl || "/placeholder.svg"}
+                src={`/ok-stupid${
+                  currentProfile.imageUrl || "/placeholder.svg"
+                }`}
                 alt="Profile picture"
                 fill
                 className="object-cover"

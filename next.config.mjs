@@ -10,8 +10,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: isProd ? "/ok-stupid/" : "",
-  basePath: isProd ? "/ok-stupid" : "",
+  assetPrefix: "/ok-stupid/",
+  basePath: "/ok-stupid",
 };
 
 export default nextConfig;
